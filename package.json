@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "A simple website for Educational Consultancy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsSarv/Education_Consultancy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsSarv/Education_Consultancy/issues"
+  },
+  "homepage": "https://github.com/itsSarv/Education_Consultancy#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  }
+}
