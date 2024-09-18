@@ -14,7 +14,7 @@
     <nav class="flex justify-between items-center px-20 py-10 relative">
         <img src="/Assets/logo-black.svg" alt="logo-black">
 
-        <div class="md:hidden">
+        <div class="lg:hidden">
             <button id="menu-toggle" class="text-gray-500 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -23,7 +23,7 @@
         </div>
 
         <!-- for desktop view -->
-        <ul class="hidden md:flex gap-16 items-center font-medium text-lg ">
+        <ul class="hidden lg:flex gap-16 items-center font-medium text-lg ">
             <li class="hover:text-purple-600">
                 <a href="#about">About Us</a>
             </li>
@@ -65,10 +65,10 @@
     </nav>
 
     <!-- hero-section -->
-    <div class="flex justify-between px-24 py-14 m-0 items-center">
+    <div class="flex justify-between px-10 lg:px-24 py-14 m-0 items-center">
         <div class="flex flex-col gap-10">
             <p class="text-purple-600 font-medium">SPECIAL OFFER FIRST CUSTOMER</p>
-            <h1 class="font-extrabold text-7xl">Your <span class="text-[#F32424]">success</span> journey <br>start with
+            <h1 class="font-extrabold md:text-7xl text-5xl">Your <span class="text-[#F32424]">success</span> journey <br>start with
                 us!</h1>
             <p class="text-xl">Eduplan Education Can Fulfil Your International Education Dream <br>As Per Your Best Fit
                 with world top universities and collages.</p>
@@ -80,13 +80,13 @@
                     class="py-6 px-8 border-2 rounded-lg hover:bg-[#764AF1] hover:text-white text-xl font-semibold">Discover</button>
             </div>
         </div>
-        <div>
+        <div class="hidden lg:block">
             <img src="/Assets/header-img.png" alt="header-img">
         </div>
     </div>
 
     <!-- hero-section block elements -->
-    <div class="flex gap-10 justify-center my-32">
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 justify-center lg:my-32 lg:px-20 md:px-10">
         <div class="py-14 px-10 rounded-3xl bg-white flex flex-col items-start gap-6">
             <img src="/Assets/idea.png" alt="idea">
             <p class="font-bold text-3xl">One Stop Study Solution</p>
