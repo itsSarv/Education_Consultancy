@@ -11,9 +11,19 @@
 <body class="bg-[#F4F2F5]">
 
     <!-- navbar -->
-    <nav class="flex justify-between px-20 py-10">
+    <nav class="flex justify-between items-center px-20 py-10 relative">
         <img src="/Assets/logo-black.svg" alt="logo-black">
-        <ul class="flex gap-16 items-center font-medium text-lg ">
+
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-500 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- for desktop view -->
+        <ul class="hidden md:flex gap-16 items-center font-medium text-lg ">
             <li class="hover:text-purple-600">
                 <a href="#about">About Us</a>
             </li>
@@ -30,6 +40,25 @@
                 <img src="/Assets/search-icon.png" alt="search-icon">
             </li>
             <li class="py-6 px-8 border-2 rounded-lg hover:bg-purple-600 hover:text-white">
+                <a href="#footer">Free Consultation</a>
+            </li>
+        </ul>
+
+        <!-- for mobile view -->
+        <ul id="mobile-menu" class="absolute top-32 left-0 w-full bg-[#F4F2F5] text-center hidden md:hidden">
+            <li class="py-4 border-b hover:text-purple-600">
+                <a href="#about">About Us</a>
+            </li>
+            <li class="py-4 border-b hover:text-purple-600">
+                <a href="#top-destinations">Apply</a>
+            </li>
+            <li class="py-4 border-b hover:text-purple-600">
+                <a href="#blogs">Blog</a>
+            </li>
+            <li class="py-4 border-b hover:text-purple-600">
+                <a href="#footer">Contact Us</a>
+            </li>
+            <li class="py-4 hover:text-purple-600">
                 <a href="#footer">Free Consultation</a>
             </li>
         </ul>
@@ -408,6 +437,8 @@
             </div>
         </div>
      </div>
+
+     <script src="script.js"></script>
 </body>
 
 </html>
