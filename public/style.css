@@ -769,6 +769,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1067,6 +1071,10 @@ video {
   padding-right: 24rem;
 }
 
+.pr-20 {
+  padding-right: 5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1236,6 +1244,10 @@ video {
     flex-shrink: 0;
   }
 
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -1248,6 +1260,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1262,6 +1278,10 @@ video {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:items-center {
@@ -1300,6 +1320,25 @@ video {
     padding-right: 1.5rem;
   }
 
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:py-48 {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .md\:pr-48 {
+    padding-right: 12rem;
+  }
+
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -1308,6 +1347,11 @@ video {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:font-bold {
@@ -1328,6 +1372,18 @@ video {
         justify-content: center;
       }
     }
+  }
+
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:-right-\[110px\] {
+    right: -110px;
+  }
+
+  .lg\:top-20 {
+    top: 5rem;
   }
 
   .lg\:my-32 {
@@ -1357,6 +1413,10 @@ video {
 
   .lg\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -1408,13 +1468,31 @@ video {
     padding-bottom: 8rem;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:pr-96 {
+    padding-right: 24rem;
+  }
+
   .lg\:text-7xl {
     font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
   .xl\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
